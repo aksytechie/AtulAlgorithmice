@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class MinStopJourney {
 	
-    class Distance{
+    static class Distance{
     	ArrayList<Integer> DI;
     	int M;
     	int N;
@@ -16,7 +16,7 @@ public class MinStopJourney {
     	{
     		int dist=0;
     		int stops=0;
-    		for(int i=0;i<N;++i)
+    		for(int i=0;i<N-1;++i)
     		{
     			dist = dist + DI.get(i);
     			if(dist < M && dist+DI.get(i+1)<M);
@@ -40,8 +40,6 @@ public class MinStopJourney {
 	dis.add(7);
 	Distance D = new Distance(dis, 5, 10);
 	System.out.println("The minimum stops are :"+ D.FindMinStops());
-	
-	
 	}
 
 }

@@ -16,12 +16,17 @@ class DEPQTest{
 		};
 		test.PQListmax = new ArrayList<Integer>(11);
 		test.PQListmin = new ArrayList<Integer>(11);
-		test.add(2);
-		test.add(7);
-		test.add(1);
-		test.add(5);
-		test.add(10);
-		
+		test.PQListmax.add(2);
+		test.PQListmax.add(5);
+		test.PQListmax.add(1);
+		test.PQListmax.add(7);
+		test.PQListmax.add(6);
+		test.PQListmin.add(2);
+		test.PQListmin.add(5);
+		test.PQListmin.add(1);
+		test.PQListmin.add(7);
+		test.PQListmin.add(6);
+		test.add();
 		Integer min = new Integer(test.getMax());
 		System.out.println(min);
 	}
